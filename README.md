@@ -1,0 +1,2 @@
+# Removing-duplicate-Links-from-Website
+The program will find the duplicate hyperlinks present in the given html file (taken as command line arguement). It will display the number of duplicates found, list of all the duplicates along with the text written between the anchor tag. After that, code will give user option to select which duplicate links he want to keep in the file and the other links will be removed and then output fill be produced in another file whose name end with ".dedup".
