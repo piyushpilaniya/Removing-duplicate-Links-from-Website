@@ -1,0 +1,11 @@
+A description of how this program works (i.e. its logic)
+
+   The code first takes the input as html file and then converts it to url and then opens it using lxml parser. After that using list I have compared all the upcoming hyperlinks and stored all the links in an list named "total" and I have also made a list name "record" which stores the index of "hl" list (the one which stores all the distinct link) of the elements which have duplicates. After that using the above data and basic logic I have made another list named "duplicatelist" which stores all the duplicate links present in the html file. Then similarly I have made 2 list for the text description one which stores all the text description present in the html file and the another one just stores the text description of the duplicate links which I have prepared by using index of duplicate links and the first list. Then my next step was to find the line numbers of duplicate links for that I have opened the html file and have gone through line by line comparing it with the text description of duplicate links the one those matches are stores in another list name "linenu". Now we have three lists which have all the information required to print for duplicates.
+After that I have taken input from user which links he want to keep. Accordingly I have used file handling to append to a file name "givenfile.html.dedup".
+
+
+3. How to compile and run this program
+   
+   Pass the html file name as an arguement to the python file.Here for example I have passes testcase.html to link.py
+
+            python link.py testcase.html 
